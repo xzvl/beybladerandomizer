@@ -1,0 +1,544 @@
+[
+  {
+    "id": "cd1936a5-dff1-4c9f-9aff-97bf5fdbac28",
+    "name": "Dran Sword 3-60F",
+    "serial": "BX-01",
+    "type": "Attack",
+    "systemLine": "BX",
+    "image": "/uploads/cd1936a5-dff1-4c9f-9aff-97bf5fdbac28.webp",
+    "createdAt": "2026-06-05T19:11:07.748Z"
+  },
+  {
+    "id": "c54e6266-5b51-4b1e-b6b5-f1c8a520f7e1",
+    "name": "Hells Scythe 4-60T",
+    "serial": "BX-02",
+    "type": "Balance",
+    "systemLine": "BX",
+    "image": "/uploads/c54e6266-5b51-4b1e-b6b5-f1c8a520f7e1.webp",
+    "createdAt": "2026-06-05T19:12:10.254Z"
+  },
+  {
+    "id": "93c91411-c7f1-4d05-bd4a-97bf4dc527c0",
+    "name": "Wizard Arrow 4-80B",
+    "serial": "BX-03",
+    "type": "Stamina",
+    "systemLine": "BX",
+    "image": "/uploads/93c91411-c7f1-4d05-bd4a-97bf4dc527c0.webp",
+    "createdAt": "2026-06-05T19:12:52.784Z"
+  },
+  {
+    "id": "dc0e21da-a7e4-48d3-a195-41d7e36963f2",
+    "name": "Knight Shield 3-80N",
+    "serial": "BX-04",
+    "type": "Defense",
+    "systemLine": "BX",
+    "image": "/uploads/dc0e21da-a7e4-48d3-a195-41d7e36963f2.webp",
+    "createdAt": "2026-06-05T19:13:16.656Z"
+  },
+  {
+    "id": "a056e435-306a-454b-952b-f140abb4a455",
+    "name": "Knight Lance 4-80HN",
+    "serial": "BX-13",
+    "type": "Defense",
+    "systemLine": "BX",
+    "image": "/uploads/a056e435-306a-454b-952b-f140abb4a455.webp",
+    "createdAt": "2026-06-05T19:17:34.435Z"
+  },
+  {
+    "id": "950bee08-e042-4c39-b865-39548835191e",
+    "name": "Shark Edge 3-60LF",
+    "serial": "BX-14 01",
+    "type": "Attack",
+    "systemLine": "BX",
+    "image": "/uploads/950bee08-e042-4c39-b865-39548835191e.webp",
+    "createdAt": "2026-06-05T19:18:20.498Z"
+  },
+  {
+    "id": "d8dfd028-c246-4e69-9926-3bfb0e691d6f",
+    "name": "Leon Claw 5-60P",
+    "serial": "BX-15",
+    "type": "Balance",
+    "systemLine": "BX",
+    "image": "/uploads/d8dfd028-c246-4e69-9926-3bfb0e691d6f.webp",
+    "createdAt": "2026-06-05T19:18:50.434Z"
+  },
+  {
+    "id": "693fa15d-0923-4370-8fd6-a13eef8a4207",
+    "name": "Viper Tail 5-80O",
+    "serial": "BX-16 01",
+    "type": "Stamina",
+    "systemLine": "BX",
+    "image": "/uploads/693fa15d-0923-4370-8fd6-a13eef8a4207.webp",
+    "createdAt": "2026-06-05T19:19:26.178Z"
+  },
+  {
+    "id": "ebc28f8f-e079-43a0-b2b8-e9174f1311fb",
+    "name": "Rhino Horn 3-80S",
+    "serial": "BX-19",
+    "type": "Defense",
+    "systemLine": "BX",
+    "image": "/uploads/ebc28f8f-e079-43a0-b2b8-e9174f1311fb.webp",
+    "createdAt": "2026-06-05T19:24:39.811Z"
+  },
+  {
+    "id": "f2a6ec9f-494d-41b9-9d11-db781c4409fc",
+    "name": "Dran Dagger 4-60R",
+    "serial": "BX-20 01",
+    "type": "Attack",
+    "systemLine": "BX",
+    "image": "/uploads/f2a6ec9f-494d-41b9-9d11-db781c4409fc.webp",
+    "createdAt": "2026-06-05T19:27:02.743Z"
+  },
+  {
+    "id": "ddecff7b-363e-4e59-853f-e9905933e8d8",
+    "name": "Hells Chain 5-60HT",
+    "serial": "BX-21 01",
+    "type": "Balance",
+    "systemLine": "BX",
+    "image": "/uploads/ddecff7b-363e-4e59-853f-e9905933e8d8.webp",
+    "createdAt": "2026-06-05T19:27:34.179Z"
+  },
+  {
+    "id": "7151f7a2-0d19-4c9a-a36e-97d5b955cea3",
+    "name": "Phoenix Wing 9-60GF",
+    "serial": "BX-23",
+    "type": "Attack",
+    "systemLine": "BX",
+    "image": "/uploads/7151f7a2-0d19-4c9a-a36e-97d5b955cea3.webp",
+    "createdAt": "2026-06-05T19:28:32.783Z"
+  },
+  {
+    "id": "5050be05-7bcb-47f1-b928-ce1651681ad6",
+    "name": "Wyvern Gale 5-80GB",
+    "serial": "BX-24",
+    "type": "Stamina",
+    "systemLine": "BX",
+    "image": "/uploads/5050be05-7bcb-47f1-b928-ce1651681ad6.webp",
+    "createdAt": "2026-06-05T19:29:10.703Z"
+  },
+  {
+    "id": "b1ee4950-aaae-4810-9970-908c7cb1b764",
+    "name": "Unicorn Sting 5-60GP",
+    "serial": "BX-26",
+    "type": "Balance",
+    "systemLine": "BX",
+    "image": "/uploads/b1ee4950-aaae-4810-9970-908c7cb1b764.webp",
+    "createdAt": "2026-06-05T19:32:07.102Z"
+  },
+  {
+    "id": "23bc50ba-339a-4c20-b3d2-4c9e8d56184e",
+    "name": "Sphinx Cowl 9-80GN",
+    "serial": "BX-27 01",
+    "type": "Defense",
+    "systemLine": "BX",
+    "image": "/uploads/23bc50ba-339a-4c20-b3d2-4c9e8d56184e.webp",
+    "createdAt": "2026-06-05T19:33:15.207Z"
+  },
+  {
+    "id": "fe3be33c-04c6-418e-a718-17db4d413799",
+    "name": "Dran Buster 1-60A",
+    "serial": "UX-01",
+    "type": "Attack",
+    "systemLine": "UX",
+    "image": "/uploads/fe3be33c-04c6-418e-a718-17db4d413799.webp",
+    "createdAt": "2026-06-05T19:34:49.705Z"
+  },
+  {
+    "id": "0e7c2748-980d-4031-b777-77eaf39c0fc4",
+    "name": "Hells Hammer 3-70H",
+    "serial": "UX-02",
+    "type": "Balance",
+    "systemLine": "UX",
+    "image": "/uploads/0e7c2748-980d-4031-b777-77eaf39c0fc4.webp",
+    "createdAt": "2026-06-05T19:35:28.660Z"
+  },
+  {
+    "id": "471fd34f-76a6-44e2-9104-a5c9d1290917",
+    "name": "Tyranno Beat 4-70Q",
+    "serial": "BX-31 01",
+    "type": "Attack",
+    "systemLine": "BX",
+    "image": "/uploads/471fd34f-76a6-44e2-9104-a5c9d1290917.webp",
+    "createdAt": "2026-06-05T19:36:46.580Z"
+  },
+  {
+    "id": "3a325d7f-a283-4d23-bab5-0ebe65bf6f7b",
+    "name": "Shinobi Shadow 1-80MN",
+    "serial": "UX-05 01",
+    "type": "Defense",
+    "systemLine": "UX",
+    "image": "/uploads/3a325d7f-a283-4d23-bab5-0ebe65bf6f7b.webp",
+    "createdAt": "2026-06-05T19:37:42.554Z"
+  },
+  {
+    "id": "7b24c037-caf9-46f0-b51d-db7479bcacb4",
+    "name": "Weiss Tiger 3-60U",
+    "serial": "BX-33",
+    "type": "Balance",
+    "systemLine": "BX",
+    "image": "/uploads/7b24c037-caf9-46f0-b51d-db7479bcacb4.webp",
+    "createdAt": "2026-06-05T19:38:30.050Z"
+  },
+  {
+    "id": "cdff7513-14ff-4744-82d8-e33e0a2820c1",
+    "name": "Cobalt Dragoon 2-60C",
+    "serial": "BX-34",
+    "type": "Attack",
+    "systemLine": "BX",
+    "image": "/uploads/cdff7513-14ff-4744-82d8-e33e0a2820c1.webp",
+    "createdAt": "2026-06-05T19:38:58.072Z"
+  },
+  {
+    "id": "67146609-e0d2-4199-b711-e2ba5a25d6e3",
+    "name": "Black Shell 4-60D",
+    "serial": "BX-35 01",
+    "type": "Defense",
+    "systemLine": "BX",
+    "image": "/uploads/67146609-e0d2-4199-b711-e2ba5a25d6e3.webp",
+    "createdAt": "2026-06-05T19:39:37.841Z"
+  },
+  {
+    "id": "8122269c-3dd6-41de-9f2b-210575bb4a3c",
+    "name": "Leon Crest 7-60GN",
+    "serial": "UX-06",
+    "type": "Defense",
+    "systemLine": "UX",
+    "image": "/uploads/8122269c-3dd6-41de-9f2b-210575bb4a3c.webp",
+    "createdAt": "2026-06-05T19:40:32.881Z"
+  },
+  {
+    "id": "2918c7ea-5eab-48ce-a18b-d71817c5eb50",
+    "name": "Phoenix Rudder 9-70G",
+    "serial": "UX-07 01",
+    "type": "Stamina",
+    "systemLine": "UX",
+    "image": "/uploads/2918c7ea-5eab-48ce-a18b-d71817c5eb50.webp",
+    "createdAt": "2026-06-05T19:41:12.606Z"
+  },
+  {
+    "id": "953c24c9-85cd-4f7d-ac22-970a3bbe453f",
+    "name": "Whale Wave 5-80E",
+    "serial": "BX-36 01",
+    "type": "Balance",
+    "systemLine": "BX",
+    "image": "/uploads/953c24c9-85cd-4f7d-ac22-970a3bbe453f.webp",
+    "createdAt": "2026-06-05T19:41:55.833Z"
+  },
+  {
+    "id": "4f47c14a-b1ab-4de5-adfe-2c10035b368d",
+    "name": "Silver Wolf 3-80FB",
+    "serial": "UX-08",
+    "type": "Stamina",
+    "systemLine": "UX",
+    "image": "/uploads/4f47c14a-b1ab-4de5-adfe-2c10035b368d.webp",
+    "createdAt": "2026-06-05T19:42:46.853Z"
+  },
+  {
+    "id": "35997427-9ce5-48e2-8ad0-8f4cbaefa15a",
+    "name": "Crimson Garuda 4-70TP",
+    "serial": "BX-38",
+    "type": "Balance",
+    "systemLine": "BX",
+    "image": "/uploads/35997427-9ce5-48e2-8ad0-8f4cbaefa15a.webp",
+    "createdAt": "2026-06-05T19:43:21.388Z"
+  },
+  {
+    "id": "0b6ba641-53b3-4933-a03e-699a85aa6568",
+    "name": "Samurai Saber 2-70L",
+    "serial": "UX-09",
+    "type": "Attack",
+    "systemLine": "UX",
+    "image": "/uploads/0b6ba641-53b3-4933-a03e-699a85aa6568.webp",
+    "createdAt": "2026-06-05T19:43:55.752Z"
+  },
+  {
+    "id": "5829828c-8867-4d09-81b1-9ca7aad0e9a7",
+    "name": "Knight Mail 3-85BS",
+    "serial": "UX-10 01",
+    "type": "Defense",
+    "systemLine": "UX",
+    "image": "/uploads/5829828c-8867-4d09-81b1-9ca7aad0e9a7.webp",
+    "createdAt": "2026-06-05T19:46:09.673Z"
+  },
+  {
+    "id": "a33ec1af-009b-4f84-a089-82aaf9da0ba6",
+    "name": "Impact Drake 9-60LR",
+    "serial": "UX-11",
+    "type": "Attack",
+    "systemLine": "UX",
+    "image": "/uploads/a33ec1af-009b-4f84-a089-82aaf9da0ba6.webp",
+    "createdAt": "2026-06-05T19:47:31.783Z"
+  },
+  {
+    "id": "190b5af5-ba2b-4f6c-af3e-b48090c345ba",
+    "name": "Ghost Circle 0-80GB",
+    "serial": "UX-12 01",
+    "type": "Stamina",
+    "systemLine": "UX",
+    "image": "/uploads/190b5af5-ba2b-4f6c-af3e-b48090c345ba.webp",
+    "createdAt": "2026-06-05T19:48:08.525Z"
+  },
+  {
+    "id": "4ed4b548-d3a6-4755-af55-fd765636415d",
+    "name": "Golem Rock 1-60UN",
+    "serial": "UX-13",
+    "type": "Defense",
+    "systemLine": "UX",
+    "image": "/uploads/4ed4b548-d3a6-4755-af55-fd765636415d.webp",
+    "createdAt": "2026-06-05T19:48:41.054Z"
+  },
+  {
+    "id": "073f21e1-6bb9-4b41-933e-f7ef51a5e039",
+    "name": "Shelter Drake 7-80GP",
+    "serial": "BX-39 01",
+    "type": "Balance",
+    "systemLine": "BX",
+    "image": "/uploads/073f21e1-6bb9-4b41-933e-f7ef51a5e039.webp",
+    "createdAt": "2026-06-05T19:49:17.017Z"
+  },
+  {
+    "id": "fe992bbc-b415-4bf3-a050-0db59cc79da1",
+    "name": "Dran Brave S6-60V",
+    "serial": "CX-01",
+    "type": "Attack",
+    "systemLine": "CX",
+    "image": "/uploads/fe992bbc-b415-4bf3-a050-0db59cc79da1.webp",
+    "createdAt": "2026-06-05T19:51:21.216Z"
+  },
+  {
+    "id": "0a94ba6d-4e63-47bd-aa5d-6b61fabd8658",
+    "name": "Wizard Arc R4-55LO",
+    "serial": "CX-02",
+    "type": "Stamina",
+    "systemLine": "CX",
+    "image": "/uploads/0a94ba6d-4e63-47bd-aa5d-6b61fabd8658.webp",
+    "createdAt": "2026-06-05T19:52:27.192Z"
+  },
+  {
+    "id": "978c4c62-acdc-447f-92ab-9db70caeb6fb",
+    "name": "Perseus Dark B6-80W",
+    "serial": "CX-03",
+    "type": "Defense",
+    "systemLine": "CX",
+    "image": "/uploads/978c4c62-acdc-447f-92ab-9db70caeb6fb.webp",
+    "createdAt": "2026-06-05T19:53:00.687Z"
+  },
+  {
+    "id": "53988e0d-03ae-46ba-bc8a-16afd32d2168",
+    "name": "Hells Reaper T4-70K",
+    "serial": "CX-05 01",
+    "type": "Balance",
+    "systemLine": "CX",
+    "image": "/uploads/53988e0d-03ae-46ba-bc8a-16afd32d2168.webp",
+    "createdAt": "2026-06-05T19:53:40.763Z"
+  },
+  {
+    "id": "45cd0d16-1f0e-420f-a2fd-0ac9bfa0c1ca",
+    "name": "Scorpio Spear 0-70Z",
+    "serial": "UX-14",
+    "type": "Balance",
+    "systemLine": "UX",
+    "image": "/uploads/45cd0d16-1f0e-420f-a2fd-0ac9bfa0c1ca.webp",
+    "createdAt": "2026-06-05T19:50:10.872Z"
+  },
+  {
+    "id": "5a6f3d8e-0591-45e6-a456-cd4bfd7bb72f",
+    "name": "Fox Brush J9-70GR",
+    "serial": "CX-06 01",
+    "type": "Attack",
+    "systemLine": "CX",
+    "image": "/uploads/5a6f3d8e-0591-45e6-a456-cd4bfd7bb72f.webp",
+    "createdAt": "2026-06-05T19:55:06.427Z"
+  },
+  {
+    "id": "35d4b9d7-f94e-4438-9c59-ee9d72721260",
+    "name": "Tricera Press M-85BS",
+    "serial": "BX-44",
+    "type": "Defense",
+    "systemLine": "BX",
+    "image": "/uploads/35d4b9d7-f94e-4438-9c59-ee9d72721260.webp",
+    "createdAt": "2026-06-05T19:58:04.137Z"
+  },
+  {
+    "id": "deef6345-3d08-41eb-a2cb-f340d2871e7a",
+    "name": "Aero Pegasus 3-70A",
+    "serial": "UX-00",
+    "type": "Attack",
+    "systemLine": "UX",
+    "image": "/uploads/deef6345-3d08-41eb-a2cb-f340d2871e7a.webp",
+    "createdAt": "2026-06-05T19:59:01.758Z"
+  },
+  {
+    "id": "559444f2-9100-437f-98ac-8ca34cbfc893",
+    "name": "Pegasus Blast ATr",
+    "serial": "CX-07",
+    "type": "Attack",
+    "systemLine": "CX",
+    "image": "/uploads/559444f2-9100-437f-98ac-8ca34cbfc893.webp",
+    "createdAt": "2026-06-05T19:59:52.378Z"
+  },
+  {
+    "id": "7172f332-5b26-453d-a655-afd7a8b99633",
+    "name": "Cerberus Flame W5-80WB",
+    "serial": "CX-08 01",
+    "type": "Stamina",
+    "systemLine": "CX",
+    "image": "/uploads/7172f332-5b26-453d-a655-afd7a8b99633.webp",
+    "createdAt": "2026-06-05T20:00:24.826Z"
+  },
+  {
+    "id": "1b9be9d8-9deb-4f44-898f-bee4742e983e",
+    "name": "Samurai Calibur 6-70M",
+    "serial": "BX-45",
+    "type": "Balance",
+    "systemLine": "BX",
+    "image": "/uploads/1b9be9d8-9deb-4f44-898f-bee4742e983e.webp",
+    "createdAt": "2026-06-05T20:01:31.112Z"
+  },
+  {
+    "id": "f2d6c053-ab38-4427-a081-a8316af1520a",
+    "name": "Shark Scale 4-50UF",
+    "serial": "UX-15 01",
+    "type": "Attack",
+    "systemLine": "UX",
+    "image": "/uploads/f2d6c053-ab38-4427-a081-a8316af1520a.webp",
+    "createdAt": "2026-06-05T20:02:15.501Z"
+  },
+  {
+    "id": "2fcd9465-7432-4f6c-8cb1-69be022c4918",
+    "name": "Sol Eclipse D5-70TK",
+    "serial": "CX-09",
+    "type": "Balance",
+    "systemLine": "CX",
+    "image": "/uploads/2fcd9465-7432-4f6c-8cb1-69be022c4918.webp",
+    "createdAt": "2026-06-05T20:03:05.708Z"
+  },
+  {
+    "id": "f0d6de7d-d602-41dd-8794-4c237bca502f",
+    "name": "Clock Mirage 9-65B",
+    "serial": "UX-16 01",
+    "type": "Stamina",
+    "systemLine": "UX",
+    "image": "/uploads/f0d6de7d-d602-41dd-8794-4c237bca502f.webp",
+    "createdAt": "2026-06-05T20:05:54.702Z",
+    "status": "inactive"
+  },
+  {
+    "id": "d84b2b59-b473-4427-8839-0262dea2704a",
+    "name": "Wolf Hunt F0-60DB",
+    "serial": "CX-10",
+    "type": "Stamina",
+    "systemLine": "BX",
+    "image": "/uploads/d84b2b59-b473-4427-8839-0262dea2704a.webp",
+    "createdAt": "2026-06-05T20:10:32.271Z",
+    "status": "inactive"
+  },
+  {
+    "id": "2e990f0b-a171-44ee-a019-779ac3dc5472",
+    "name": "Emperor Might HOp",
+    "serial": "CX-11 01",
+    "type": "Balance",
+    "systemLine": "CX",
+    "image": "/uploads/2e990f0b-a171-44ee-a019-779ac3dc5472.webp",
+    "createdAt": "2026-06-05T20:11:25.763Z",
+    "status": "inactive"
+  },
+  {
+    "id": "a1e26cda-e897-4516-841f-f552a051bace",
+    "name": "Meteor Dragoon 3-70J",
+    "serial": "UX-17",
+    "type": "Attack",
+    "systemLine": "UX",
+    "image": "/uploads/a1e26cda-e897-4516-841f-f552a051bace.webp",
+    "createdAt": "2026-06-05T20:13:16.954Z",
+    "status": "inactive"
+  },
+  {
+    "id": "c4d22622-bba0-4683-ae17-bb012d254674",
+    "name": "Mummy Curse 7-55W",
+    "serial": "UX-18 01",
+    "type": "Defense",
+    "systemLine": "UX",
+    "image": "/uploads/c4d22622-bba0-4683-ae17-bb012d254674.webp",
+    "createdAt": "2026-06-05T20:13:52.171Z",
+    "status": "inactive"
+  },
+  {
+    "id": "404728d7-3109-4121-95cf-05ef8a51dda5",
+    "name": "Phoenix Flare Z9-80WW",
+    "serial": "CX-12",
+    "type": "Defense",
+    "systemLine": "CX",
+    "image": "/uploads/404728d7-3109-4121-95cf-05ef8a51dda5.webp",
+    "createdAt": "2026-06-05T20:15:18.462Z",
+    "status": "inactive"
+  },
+  {
+    "id": "8540af83-e986-4ef4-81f7-8346852aaf54",
+    "name": "Bahamut Blitz BK1-50I",
+    "serial": "CX-13",
+    "type": "Attack",
+    "systemLine": "CX",
+    "image": "/uploads/8540af83-e986-4ef4-81f7-8346852aaf54.webp",
+    "createdAt": "2026-06-05T20:18:00.892Z"
+  },
+  {
+    "id": "d1d6786e-2345-400f-86bf-970aa95b959e",
+    "name": "Knight Fortress GV8-70UN",
+    "serial": "CX-14",
+    "type": "Defense",
+    "systemLine": "CX",
+    "image": "/uploads/d1d6786e-2345-400f-86bf-970aa95b959e.webp",
+    "createdAt": "2026-06-05T20:18:31.909Z",
+    "status": "inactive"
+  },
+  {
+    "id": "d2c1a901-3d9d-499c-9583-05597506ed90",
+    "name": "Ragna Rage FE4-55Y",
+    "serial": "CX-15",
+    "type": "Stamina",
+    "systemLine": "BX",
+    "image": "/uploads/d2c1a901-3d9d-499c-9583-05597506ed90.webp",
+    "createdAt": "2026-06-05T20:19:04.902Z",
+    "status": "inactive"
+  },
+  {
+    "id": "15e6590d-ba08-4043-b335-33fb77a6358f",
+    "name": "Bullet Griffon H",
+    "serial": "UX-19",
+    "type": "Balance",
+    "systemLine": "UX",
+    "image": "/uploads/15e6590d-ba08-4043-b335-33fb77a6358f.webp",
+    "createdAt": "2026-06-05T20:20:12.712Z",
+    "status": "inactive"
+  },
+  {
+    "id": "e262e29b-046c-4cb4-adc3-7a81f3f5bacb",
+    "name": "Unicorn Delta PO3-60GU",
+    "serial": "CX-17 01",
+    "type": "Balance",
+    "systemLine": "CX",
+    "image": "/uploads/e262e29b-046c-4cb4-adc3-7a81f3f5bacb.webp",
+    "createdAt": "2026-06-05T20:21:09.752Z",
+    "status": "inactive"
+  },
+  {
+    "id": "f6e3eb9e-0f6d-4e3f-9a5f-6be391f302b9",
+    "name": "Dran Strike 4-50FF",
+    "serial": "BX-49",
+    "type": "Attack",
+    "systemLine": "BX",
+    "image": "/uploads/f6e3eb9e-0f6d-4e3f-9a5f-6be391f302b9.webp",
+    "createdAt": "2026-06-05T20:22:02.365Z"
+  },
+  {
+    "id": "d7614bc0-f4e0-4328-94df-2d0929e22631",
+    "name": "Brachio Whip OW5-70Nr",
+    "serial": "CX-18 01",
+    "type": "Stamina",
+    "systemLine": "CX",
+    "image": "/uploads/d7614bc0-f4e0-4328-94df-2d0929e22631.webp",
+    "createdAt": "2026-06-05T20:23:10.628Z",
+    "status": "inactive"
+  }
+]

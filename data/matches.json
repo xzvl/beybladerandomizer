@@ -1,0 +1,24 @@
+{
+  "assignments": [
+    {
+      "playerId": "8386d98b-c145-409f-b674-b6390fd7c20b",
+      "playerName": "T2CRV",
+      "beybladeIds": [
+        "0b6ba641-53b3-4933-a03e-699a85aa6568",
+        "ebc28f8f-e079-43a0-b2b8-e9174f1311fb",
+        "693fa15d-0923-4370-8fd6-a13eef8a4207"
+      ]
+    },
+    {
+      "playerId": "ce4c8b93-a66c-4892-b728-9cb8140b9f68",
+      "playerName": "EVE",
+      "beybladeIds": [
+        "8540af83-e986-4ef4-81f7-8346852aaf54",
+        "d8dfd028-c246-4e69-9926-3bfb0e691d6f",
+        "3a325d7f-a283-4d23-bab5-0ebe65bf6f7b"
+      ]
+    }
+  ],
+  "numBeyblades": 3,
+  "createdAt": "2026-06-05T20:28:01.919Z"
+}

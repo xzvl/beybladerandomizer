@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #ed0d11;
+  --color-primary-container: #b60b0e;
+  --color-background: #131313;
+  --color-surface: #131313;
+  --color-surface-container: #1f1f1f;
+  --color-surface-container-high: #2a2a2a;
+  --color-surface-container-highest: #353535;
+  --color-on-surface: #e2e2e2;
+  --color-on-surface-variant: #ebbbb4;
+  --color-outline-variant: #603e39;
+  --color-secondary: #c6c6c7;
+  --color-error: #ffb4ab;
+
+  --font-inter: var(--font-inter-var), Inter, sans-serif;
+  --font-mono: var(--font-jetbrains), "JetBrains Mono", monospace;
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes spin-slot {
+  0% { transform: translateY(0); opacity: 1; }
+  25% { transform: translateY(-8px); opacity: 0.3; }
+  50% { transform: translateY(0); opacity: 1; }
+  75% { transform: translateY(8px); opacity: 0.3; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@layer utilities {
+  .animate-fade-up {
+    animation: fade-up 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  .animate-fade-in {
+    animation: fade-in 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  .animate-blink {
+    animation: blink 1s step-start infinite;
+  }
+  .animate-slot {
+    animation: spin-slot 0.18s ease-in-out infinite;
+  }
+
+  .cyber-grid {
+    background-image:
+      linear-gradient(rgba(237, 13, 17, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(237, 13, 17, 0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .glass-panel {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(32px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .scanline {
+    background: linear-gradient(
+      to bottom,
+      transparent 50%,
+      rgba(237, 13, 17, 0.06) 51%,
+      transparent 51%
+    );
+    background-size: 100% 4px;
+    pointer-events: none;
+  }
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  background-color: #131313;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #131313;
+  color: #e2e2e2;
+  font-family: var(--font-inter);
+}
+
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+::-webkit-scrollbar { width: 2px; }
+::-webkit-scrollbar-thumb { background: #ed0d11; }
+::-webkit-scrollbar-track { background: transparent; }
+
+select option {
+  background-color: #1f1f1f;
+  color: #e2e2e2;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 0.4;
+}
