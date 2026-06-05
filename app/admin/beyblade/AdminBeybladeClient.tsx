@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { Player, Beyblade, Match, PlayerAssignment } from '@/types';
 
@@ -362,8 +361,8 @@ export default function AdminBeybladeClient() {
                     {formImage ? formImage.name : 'Choose Image...'}
                   </button>
                   {imagePreview && (
-                    <div className="relative w-10 h-10 flex-shrink-0 border border-[#603e39]/40">
-                      <Image src={imagePreview} alt="preview" fill className="object-contain" />
+                    <div className="w-10 h-10 flex-shrink-0 border border-[#603e39]/40">
+                      <img src={imagePreview} alt="preview" className="w-full h-full object-contain" />
                     </div>
                   )}
                   <input ref={fileRef} type="file" accept="image/*" onChange={handleImageChange} className="hidden" />
@@ -404,8 +403,8 @@ export default function AdminBeybladeClient() {
                 <Link href="/" className="font-mono text-[10px] text-primary/60 hover:text-primary transition-colors mt-2 inline-block">Go to homepage to register players →</Link>
               </div>
             ) : (
-              <div className="glass-panel overflow-hidden">
-                <table className="w-full">
+              <div className="glass-panel overflow-x-auto">
+                <table className="w-full min-w-[560px]">
                   <thead>
                     <tr className="border-b border-[#603e39]/40">
                       <th className="font-mono text-[9px] tracking-widest uppercase text-[#e2e2e2]/40 px-4 py-3 text-left w-8">#</th>
@@ -454,8 +453,8 @@ export default function AdminBeybladeClient() {
                                 ) : (
                                   <div className="flex items-center gap-2">
                                     {image ? (
-                                      <div className="relative w-8 h-8 flex-shrink-0 border border-[#603e39]/30">
-                                        <Image src={image} alt={name} fill className="object-contain" />
+                                      <div className="w-8 h-8 flex-shrink-0 border border-[#603e39]/30">
+                                        <img src={image} alt={name} className="w-full h-full object-contain" />
                                       </div>
                                     ) : (
                                       <div className="w-8 h-8 flex-shrink-0 flex items-center justify-center border border-[#603e39]/20">
@@ -534,8 +533,8 @@ export default function AdminBeybladeClient() {
                       className={`glass-panel px-4 py-3 flex items-center gap-3 group transition-opacity ${isActive ? 'opacity-100' : 'opacity-40'}`}
                     >
                       {bey.image ? (
-                        <div className={`relative w-8 h-8 flex-shrink-0 ${!isActive ? 'grayscale' : ''}`}>
-                          <Image src={bey.image} alt={bey.name} fill className="object-contain" />
+                        <div className={`w-8 h-8 flex-shrink-0 ${!isActive ? 'grayscale' : ''}`}>
+                          <img src={bey.image} alt={bey.name} className="w-full h-full object-contain" />
                         </div>
                       ) : (
                         <div className="w-8 h-8 flex-shrink-0 flex items-center justify-center border border-[#603e39]/30">

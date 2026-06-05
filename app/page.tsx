@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { Player, Beyblade, Match } from '@/types';
 
 export default function Home() {
@@ -174,15 +173,15 @@ export default function Home() {
                 <p className="font-mono text-[10px] tracking-[0.2em] uppercase text-primary mb-4 text-center">
                   {match.assignments.find(a => a.playerId === selectedPlayerId)?.playerName} — Match Assignment
                 </p>
-                <div className="grid gap-3" style={{ gridTemplateColumns: `repeat(${selectedBeyblades.length}, 1fr)` }}>
+                <div className={`grid gap-3 grid-cols-1 ${selectedBeyblades.length >= 2 ? 'sm:grid-cols-2' : ''} ${selectedBeyblades.length >= 3 ? 'sm:grid-cols-3' : ''}`}>
                   {selectedBeyblades.map((bey, i) => (
                     <div key={bey.id} className="glass-panel p-4 flex flex-col items-center gap-2">
                       <p className="font-mono text-[9px] tracking-[0.2em] uppercase text-[#e2e2e2]/30">
                         Beyblade {i + 1}
                       </p>
                       {bey.image ? (
-                        <div className="relative w-16 h-16">
-                          <Image src={bey.image} alt={bey.name} fill className="object-contain" />
+                        <div className="w-16 h-16">
+                          <img src={bey.image} alt={bey.name} className="w-full h-full object-contain" />
                         </div>
                       ) : (
                         <div className="w-16 h-16 flex items-center justify-center border border-[#603e39]/40">

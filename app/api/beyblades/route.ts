@@ -2,8 +2,6 @@ import { NextRequest, NextResponse } from 'next/server';
 import { readData, writeData } from '@/lib/data';
 import { Beyblade } from '@/types';
 import { randomUUID } from 'crypto';
-import fs from 'fs';
-import path from 'path';
 
 export async function GET() {
   return NextResponse.json(readData<Beyblade[]>('beyblades.json', []));
@@ -25,12 +23,9 @@ export async function POST(req: NextRequest) {
   let imagePath = '';
 
   if (imageFile && imageFile.size > 0) {
-    const ext = imageFile.name.split('.').pop() || 'jpg';
-    const uploadDir = path.join(process.cwd(), 'public', 'uploads');
-    if (!fs.existsSync(uploadDir)) fs.mkdirSync(uploadDir, { recursive: true });
     const buffer = Buffer.from(await imageFile.arrayBuffer());
-    fs.writeFileSync(path.join(uploadDir, `${id}.${ext}`), buffer);
-    imagePath = `/uploads/${id}.${ext}`;
+    const mime = imageFile.type || 'image/jpeg';
+    imagePath = `data:${mime};base64,${buffer.toString('base64')}`;
   }
 
   const beyblade: Beyblade = {
