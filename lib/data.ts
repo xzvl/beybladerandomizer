@@ -1,27 +1,34 @@
+import { Redis } from '@upstash/redis';
 import fs from 'fs';
 import path from 'path';
 
-const DATA_DIR = path.join(process.cwd(), 'data');
+let redis: Redis | null = null;
 
-function ensureDir() {
-  if (!fs.existsSync(DATA_DIR)) {
-    fs.mkdirSync(DATA_DIR, { recursive: true });
+function getRedis(): Redis {
+  if (!redis) {
+    redis = Redis.fromEnv();
   }
+  return redis;
 }
 
-export function readData<T>(filename: string, defaultValue: T): T {
-  ensureDir();
-  const filePath = path.join(DATA_DIR, filename);
-  if (!fs.existsSync(filePath)) return defaultValue;
+export async function readData<T>(key: string, defaultValue: T): Promise<T> {
+  const client = getRedis();
+  const data = await client.get<T>(key);
+  if (data !== null && data !== undefined) return data;
+
+  // First-run fallback: seed from committed JSON files
   try {
-    return JSON.parse(fs.readFileSync(filePath, 'utf-8')) as T;
-  } catch {
-    return defaultValue;
-  }
+    const filePath = path.join(process.cwd(), 'data', key);
+    if (fs.existsSync(filePath)) {
+      const fileData = JSON.parse(fs.readFileSync(filePath, 'utf-8')) as T;
+      await client.set(key, JSON.stringify(fileData));
+      return fileData;
+    }
+  } catch {}
+
+  return defaultValue;
 }
 
-export function writeData<T>(filename: string, data: T): void {
-  ensureDir();
-  const filePath = path.join(DATA_DIR, filename);
-  fs.writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf-8');
+export async function writeData<T>(key: string, data: T): Promise<void> {
+  await getRedis().set(key, JSON.stringify(data));
 }

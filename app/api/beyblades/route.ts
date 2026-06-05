@@ -2,11 +2,10 @@ import { NextRequest, NextResponse } from 'next/server';
 import { readData, writeData } from '@/lib/data';
 import { Beyblade } from '@/types';
 import { randomUUID } from 'crypto';
-import fs from 'fs';
-import path from 'path';
+import { put, del } from '@vercel/blob';
 
 export async function GET() {
-  return NextResponse.json(readData<Beyblade[]>('beyblades.json', []));
+  return NextResponse.json(await readData<Beyblade[]>('beyblades.json', []));
 }
 
 export async function POST(req: NextRequest) {
@@ -26,11 +25,8 @@ export async function POST(req: NextRequest) {
 
   if (imageFile && imageFile.size > 0) {
     const ext = imageFile.name.split('.').pop() || 'jpg';
-    const uploadDir = path.join(process.cwd(), 'public', 'uploads');
-    if (!fs.existsSync(uploadDir)) fs.mkdirSync(uploadDir, { recursive: true });
-    const buffer = Buffer.from(await imageFile.arrayBuffer());
-    fs.writeFileSync(path.join(uploadDir, `${id}.${ext}`), buffer);
-    imagePath = `/uploads/${id}.${ext}`;
+    const blob = await put(`beyblades/${id}.${ext}`, imageFile, { access: 'public' });
+    imagePath = blob.url;
   }
 
   const beyblade: Beyblade = {
@@ -44,9 +40,9 @@ export async function POST(req: NextRequest) {
     createdAt: new Date().toISOString(),
   };
 
-  const beyblades = readData<Beyblade[]>('beyblades.json', []);
+  const beyblades = await readData<Beyblade[]>('beyblades.json', []);
   beyblades.push(beyblade);
-  writeData('beyblades.json', beyblades);
+  await writeData('beyblades.json', beyblades);
   return NextResponse.json(beyblade, { status: 201 });
 }
 
@@ -55,18 +51,22 @@ export async function PATCH(req: NextRequest) {
   if (!id || !['active', 'inactive'].includes(status)) {
     return NextResponse.json({ error: 'Invalid request' }, { status: 400 });
   }
-  const beyblades = readData<Beyblade[]>('beyblades.json', []);
+  const beyblades = await readData<Beyblade[]>('beyblades.json', []);
   const idx = beyblades.findIndex(b => b.id === id);
   if (idx === -1) return NextResponse.json({ error: 'Not found' }, { status: 404 });
   beyblades[idx] = { ...beyblades[idx], status };
-  writeData('beyblades.json', beyblades);
+  await writeData('beyblades.json', beyblades);
   return NextResponse.json(beyblades[idx]);
 }
 
 export async function DELETE(req: NextRequest) {
   const { id } = await req.json();
-  const beyblades = readData<Beyblade[]>('beyblades.json', []);
-  const updated = beyblades.filter(b => b.id !== id);
-  writeData('beyblades.json', updated);
+  const beyblades = await readData<Beyblade[]>('beyblades.json', []);
+  const toDelete = beyblades.find(b => b.id === id);
+  // Only delete Blob-hosted images (local /uploads/ paths are committed static assets)
+  if (toDelete?.image?.startsWith('https://')) {
+    try { await del(toDelete.image); } catch {}
+  }
+  await writeData('beyblades.json', beyblades.filter(b => b.id !== id));
   return NextResponse.json({ success: true });
 }
