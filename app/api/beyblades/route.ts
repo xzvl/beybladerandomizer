@@ -1,8 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { readData, writeData } from '@/lib/data';
+import { readData, writeData, uploadImage } from '@/lib/data';
 import { Beyblade } from '@/types';
 import { randomUUID } from 'crypto';
-import { put, del } from '@vercel/blob';
 
 export async function GET() {
   return NextResponse.json(await readData<Beyblade[]>('beyblades.json', []));
@@ -25,8 +24,8 @@ export async function POST(req: NextRequest) {
 
   if (imageFile && imageFile.size > 0) {
     const ext = imageFile.name.split('.').pop() || 'jpg';
-    const blob = await put(`beyblades/${id}.${ext}`, imageFile, { access: 'public' });
-    imagePath = blob.url;
+    const buffer = Buffer.from(await imageFile.arrayBuffer());
+    imagePath = await uploadImage(id, ext, buffer);
   }
 
   const beyblade: Beyblade = {
@@ -62,11 +61,6 @@ export async function PATCH(req: NextRequest) {
 export async function DELETE(req: NextRequest) {
   const { id } = await req.json();
   const beyblades = await readData<Beyblade[]>('beyblades.json', []);
-  const toDelete = beyblades.find(b => b.id === id);
-  // Only delete Blob-hosted images (local /uploads/ paths are committed static assets)
-  if (toDelete?.image?.startsWith('https://')) {
-    try { await del(toDelete.image); } catch {}
-  }
   await writeData('beyblades.json', beyblades.filter(b => b.id !== id));
   return NextResponse.json({ success: true });
 }
