@@ -4,17 +4,21 @@
       "playerId": "8386d98b-c145-409f-b674-b6390fd7c20b",
       "playerName": "T2CRV",
       "beybladeIds": [
-        "35997427-9ce5-48e2-8ad0-8f4cbaefa15a"
+        "978c4c62-acdc-447f-92ab-9db70caeb6fb",
+        "0a94ba6d-4e63-47bd-aa5d-6b61fabd8658",
+        "b1ee4950-aaae-4810-9970-908c7cb1b764"
       ]
     },
     {
       "playerId": "ce4c8b93-a66c-4892-b728-9cb8140b9f68",
       "playerName": "EVE",
       "beybladeIds": [
-        "23bc50ba-339a-4c20-b3d2-4c9e8d56184e"
+        "35d4b9d7-f94e-4438-9c59-ee9d72721260",
+        "190b5af5-ba2b-4f6c-af3e-b48090c345ba",
+        "7b24c037-caf9-46f0-b51d-db7479bcacb4"
       ]
     }
   ],
-  "numBeyblades": 1,
-  "createdAt": "2026-06-05T21:44:35.023Z"
+  "numBeyblades": 3,
+  "createdAt": "2026-06-05T21:44:48.405Z"
 }
