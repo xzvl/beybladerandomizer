@@ -5,23 +5,27 @@ import path from 'path';
 let redis: Redis | null = null;
 
 function getRedis(): Redis {
-  if (!redis) {
-    redis = Redis.fromEnv();
-  }
+  if (!redis) redis = Redis.fromEnv();
   return redis;
 }
 
+// Wrap all stored values so null is distinguishable from "key missing"
+type Wrapper<T> = { v: T };
+
 export async function readData<T>(key: string, defaultValue: T): Promise<T> {
   const client = getRedis();
-  const data = await client.get<T>(key);
-  if (data !== null && data !== undefined) return data;
+  const wrapper = await client.get<Wrapper<T>>(key);
 
-  // First-run fallback: seed from committed JSON files
+  if (wrapper !== null && wrapper !== undefined) {
+    return wrapper.v;
+  }
+
+  // First-run: seed Redis from committed JSON files
   try {
     const filePath = path.join(process.cwd(), 'data', key);
     if (fs.existsSync(filePath)) {
       const fileData = JSON.parse(fs.readFileSync(filePath, 'utf-8')) as T;
-      await client.set(key, JSON.stringify(fileData));
+      await client.set(key, { v: fileData });
       return fileData;
     }
   } catch {}
@@ -30,5 +34,5 @@ export async function readData<T>(key: string, defaultValue: T): Promise<T> {
 }
 
 export async function writeData<T>(key: string, data: T): Promise<void> {
-  await getRedis().set(key, JSON.stringify(data));
+  await getRedis().set(key, { v: data });
 }
