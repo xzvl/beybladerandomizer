@@ -39,7 +39,3 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
-# uploaded beyblade images (keep folder structure)
-/public/uploads/*
-!/public/uploads/.gitkeep
