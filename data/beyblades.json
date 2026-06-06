@@ -366,7 +366,8 @@
     "type": "Attack",
     "systemLine": "UX",
     "image": "/uploads/deef6345-3d08-41eb-a2cb-f340d2871e7a.webp",
-    "createdAt": "2026-06-05T19:59:01.758Z"
+    "createdAt": "2026-06-05T19:59:01.758Z",
+    "status": "inactive"
   },
   {
     "id": "559444f2-9100-437f-98ac-8ca34cbfc893",
