@@ -411,7 +411,8 @@
     "type": "Balance",
     "systemLine": "CX",
     "image": "/uploads/2fcd9465-7432-4f6c-8cb1-69be022c4918.webp",
-    "createdAt": "2026-06-05T20:03:05.708Z"
+    "createdAt": "2026-06-05T20:03:05.708Z",
+    "status": "inactive"
   },
   {
     "id": "f0d6de7d-d602-41dd-8794-4c237bca502f",
