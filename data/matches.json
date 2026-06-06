@@ -1,1 +1,123 @@
-null
+{
+  "assignments": [
+    {
+      "playerId": "c668ddb7-0bd3-47d5-8900-3e367cd74826",
+      "playerName": "Jennie",
+      "beybladeIds": [
+        "c54e6266-5b51-4b1e-b6b5-f1c8a520f7e1",
+        "f2a6ec9f-494d-41b9-9d11-db781c4409fc",
+        "dc0e21da-a7e4-48d3-a195-41d7e36963f2"
+      ]
+    },
+    {
+      "playerId": "7504385b-4b56-491e-aa60-d7df805c95f8",
+      "playerName": "con",
+      "beybladeIds": [
+        "a056e435-306a-454b-952b-f140abb4a455",
+        "93c91411-c7f1-4d05-bd4a-97bf4dc527c0",
+        "7151f7a2-0d19-4c9a-a36e-97d5b955cea3"
+      ]
+    },
+    {
+      "playerId": "4e57607c-0a76-4b21-8313-95378001e7b3",
+      "playerName": "john",
+      "beybladeIds": [
+        "cdff7513-14ff-4744-82d8-e33e0a2820c1",
+        "471fd34f-76a6-44e2-9104-a5c9d1290917",
+        "7b24c037-caf9-46f0-b51d-db7479bcacb4"
+      ]
+    },
+    {
+      "playerId": "56925547-6c7b-465c-a205-19b931f2dbd9",
+      "playerName": "Luke",
+      "beybladeIds": [
+        "ddecff7b-363e-4e59-853f-e9905933e8d8",
+        "67146609-e0d2-4199-b711-e2ba5a25d6e3",
+        "5a6f3d8e-0591-45e6-a456-cd4bfd7bb72f"
+      ]
+    },
+    {
+      "playerId": "614f9481-a267-4b9f-bc09-300058f8c213",
+      "playerName": "nicka",
+      "beybladeIds": [
+        "693fa15d-0923-4370-8fd6-a13eef8a4207",
+        "cd1936a5-dff1-4c9f-9aff-97bf5fdbac28",
+        "fe992bbc-b415-4bf3-a050-0db59cc79da1"
+      ]
+    },
+    {
+      "playerId": "46ec36c1-a855-4a31-8a94-9b9d5903fbc7",
+      "playerName": "liam",
+      "beybladeIds": [
+        "0b6ba641-53b3-4933-a03e-699a85aa6568",
+        "35d4b9d7-f94e-4438-9c59-ee9d72721260",
+        "5829828c-8867-4d09-81b1-9ca7aad0e9a7"
+      ]
+    },
+    {
+      "playerId": "c08a82a7-ce39-4190-a740-3a1f25381297",
+      "playerName": "dale",
+      "beybladeIds": [
+        "a33ec1af-009b-4f84-a089-82aaf9da0ba6",
+        "7172f332-5b26-453d-a655-afd7a8b99633",
+        "953c24c9-85cd-4f7d-ac22-970a3bbe453f"
+      ]
+    },
+    {
+      "playerId": "3ceebe04-5c91-4712-ae95-35a555686447",
+      "playerName": "les",
+      "beybladeIds": [
+        "ebc28f8f-e079-43a0-b2b8-e9174f1311fb",
+        "b1ee4950-aaae-4810-9970-908c7cb1b764",
+        "4ed4b548-d3a6-4755-af55-fd765636415d"
+      ]
+    },
+    {
+      "playerId": "baa07718-cf25-4d5e-ae72-9411403abedf",
+      "playerName": "JC",
+      "beybladeIds": [
+        "f2d6c053-ab38-4427-a081-a8316af1520a",
+        "0a94ba6d-4e63-47bd-aa5d-6b61fabd8658",
+        "190b5af5-ba2b-4f6c-af3e-b48090c345ba"
+      ]
+    },
+    {
+      "playerId": "ae2cdba1-2323-405c-8d7d-4096ab642e38",
+      "playerName": "angel",
+      "beybladeIds": [
+        "0e7c2748-980d-4031-b777-77eaf39c0fc4",
+        "d8dfd028-c246-4e69-9926-3bfb0e691d6f",
+        "2918c7ea-5eab-48ce-a18b-d71817c5eb50"
+      ]
+    },
+    {
+      "playerId": "f2f9f8ec-16ba-4aec-9ef0-171b63ca9cb5",
+      "playerName": "vin",
+      "beybladeIds": [
+        "4f47c14a-b1ab-4de5-adfe-2c10035b368d",
+        "8122269c-3dd6-41de-9f2b-210575bb4a3c",
+        "950bee08-e042-4c39-b865-39548835191e"
+      ]
+    },
+    {
+      "playerId": "5bea9d20-d1e7-40a6-bef0-4d68474ad10c",
+      "playerName": "eve",
+      "beybladeIds": [
+        "3a325d7f-a283-4d23-bab5-0ebe65bf6f7b",
+        "35997427-9ce5-48e2-8ad0-8f4cbaefa15a",
+        "23bc50ba-339a-4c20-b3d2-4c9e8d56184e"
+      ]
+    },
+    {
+      "playerId": "6dd16657-7bf9-4f4a-b9de-1515d5d6a926",
+      "playerName": "daddyedwin",
+      "beybladeIds": [
+        "53988e0d-03ae-46ba-bc8a-16afd32d2168",
+        "559444f2-9100-437f-98ac-8ca34cbfc893",
+        "8540af83-e986-4ef4-81f7-8346852aaf54"
+      ]
+    }
+  ],
+  "numBeyblades": 3,
+  "createdAt": "2026-06-06T11:18:31.869Z"
+}
